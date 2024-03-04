@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PhoneBook</string>
+    <string name="contactName">%s</string>
+    <string name="phonebook">Phonebook</string>
+    <string name="newContact">New contact</string>
+    <string name="phoneNumber">Phone number *</string>
+    <string name="firstName">First name *</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="invalidPhoneNumber">Invalid phone number!</string>
+    <string name="phoneNumberExists">Phone number already exists!</string>
+    <string name="firstNameEmpty">First name cannot be empty!</string>
+    <string name="phoneNumberEmpty">Phone number cannot be empty!</string>
+    <string name="delete">Delete</string>
+    <string name="deleteDoubleCheck">Are you sure you want to delete this contact?</string>
+    <string name="contacts">Contacts</string>
+</resources>

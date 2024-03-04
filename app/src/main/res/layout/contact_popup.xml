@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_popup"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="40dp"
+        app:backgroundTint="@null"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cancelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textColor="@color/medium_blue"
+                android:textSize="14sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/doneTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/done"
+                android:textColor="@color/medium_blue"
+                android:textSize="14sp"
+                android:layout_marginHorizontal="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/firstName"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/cancelTv"
+                android:layout_marginTop="20dp"
+                />
+
+            <!-- Last Name EditText -->
+            <EditText
+                android:id="@+id/lastNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Last Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:padding="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/firstNameEditText" />
+
+            <!-- Phone Number EditText -->
+            <EditText
+                android:id="@+id/phoneNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/phoneNumber"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:padding="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/lastNameEditText" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete_button_background"
+                android:text="@string/delete"
+                android:textColor="@color/red"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText"
+                app:layout_constraintBottom_toTopOf="@+id/guideline"
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- First Name EditText -->
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
