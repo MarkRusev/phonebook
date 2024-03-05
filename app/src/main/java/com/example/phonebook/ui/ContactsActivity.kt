@@ -91,6 +91,9 @@ class ContactsActivity : AppCompatActivity(), ContactsReloadListener {
                     if (contact.fullName.lowercase(Locale.getDefault()).contains(filterPattern)) {
                         filteredList.add(contact)
                     }
+                    else if (contact.phoneNumber.lowercase(Locale.getDefault()).contains(filterPattern)) {
+                        filteredList.add(contact)
+                    }
                 }
             }
         }

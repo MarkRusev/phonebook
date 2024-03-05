@@ -56,10 +56,6 @@ class ContactRecycler(private var contacts: MutableList<Contact>?, private val c
         notifyDataSetChanged()
     }
 
-    fun getContacts():MutableList<Contact>?{
-        return contacts
-    }
-
     fun removeContact(phoneNumber: String) {
         if (contacts != null) {
             for (contact in contacts!!) {
